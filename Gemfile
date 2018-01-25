@@ -30,6 +30,7 @@ source 'https://rubygems.org'
    gem 'faker'
    gem 'factory_girl_rails'
    gem 'pry-rails'
+   gem 'pundit'
  end
 
  # Use Puma as the app server
