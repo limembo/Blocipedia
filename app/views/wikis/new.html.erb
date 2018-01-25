@@ -1,0 +1,33 @@
+<h1>Submit a Blocipedia Wiki!</h1><br>
+
+<div class="row">
+  <div class="col-md-4">
+    <h4>Our site is only as good as its content! Help the community by submitting a wiki.</h4><br>
+    <h4>Wiki Guidelines</h4>
+    <ul>
+      <li>All wiki submissions are subject to approval by the moderator.</li>
+      <li>Be helpful and encouraging. This is a place where people come for answers and encouragement.</li>
+      <li>Use this space to provide advice to your peers in a fun but accurate manner.</li>
+      <li>Only you can see private wikis.</li>
+    </ul>
+  </div>
+    <div class="col-md-8">
+      <%= form_for @wiki do |f| %>
+        <div class="form-group">
+          <%= f.label :title %>
+          <%= f.text_field :title, class: 'form-control', placeholder: "Enter wiki title" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :body %>
+          <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter content here" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :private %>
+          <%= f.check_box :private, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.submit "Save", class: 'btn btn-success' %>
+        </div>
+      <% end %>
+    </div>
+  </div>

@@ -24,6 +24,12 @@ source 'https://rubygems.org'
  group :development, :test do
    gem 'rspec-rails', '~> 3.0'
    gem 'rails-controller-testing'
+   gem 'shoulda'
+   gem 'byebug'
+   gem 'spring'
+   gem 'faker'
+   gem 'factory_girl_rails'
+   gem 'pry-rails'
  end
 
  # Use Puma as the app server
