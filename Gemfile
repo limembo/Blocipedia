@@ -27,13 +27,14 @@ source 'https://rubygems.org'
    gem 'shoulda'
    gem 'figaro', '1.0'
    gem 'byebug'
-   gem 'stripe'
    gem 'spring'
    gem 'faker'
    gem 'factory_girl_rails'
    gem 'pry-rails'
    gem 'pundit'
  end
+
+  gem 'stripe'
 
  # Use Puma as the app server
  gem 'puma', '~> 3.0'
