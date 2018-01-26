@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'charges/create'
-
-  resources :wikis
+  delete '/charges', to: 'charges#delete', as: :downgrade
   resources :charges, only: [:new, :create]
+
+   resources :wikis
+
   devise_for :users
 
   get 'about' => 'welcome#about'
