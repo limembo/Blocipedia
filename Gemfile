@@ -31,8 +31,9 @@ source 'https://rubygems.org'
    gem 'faker'
    gem 'factory_girl_rails'
    gem 'pry-rails'
-   gem 'pundit'
  end
+
+ gem 'pundit'
 
   gem 'stripe'
 
