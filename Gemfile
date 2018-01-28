@@ -33,9 +33,11 @@ source 'https://rubygems.org'
    gem 'pry-rails'
  end
 
- gem 'pundit'
+  gem 'pundit'
 
   gem 'stripe'
+
+  gem 'redcarpet'
 
  # Use Puma as the app server
  gem 'puma', '~> 3.0'
